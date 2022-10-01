@@ -1,0 +1,421 @@
+/* Resets the CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+
+/* Styling the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.modal-content {
+    background-color: #F7F8FA;
+    margin: auto;
+    padding: 70px;
+    border-radius: 10px;
+    width: 60%;
+    height: 80%;
+    flex-direction: column;
+}
+
+#cartModal .modal-content #cartIcon {
+    margin-top: 8%;
+}
+
+#cartModal .modal-content h1 {
+    padding-top: 40px;
+}
+
+#cartModal .modal-content p {
+    color: #737373;
+    padding: 5px;
+}
+
+#addCart{
+    cursor: pointer;
+}
+
+#requestDishModal h2{
+    margin-bottom: 30px;
+}
+
+#requestDishModal p{
+    padding:20px 5px 5px;
+}
+
+#requestDishModal input{
+    width: 100%;
+    border: none;
+    padding: 10px 16px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+#requestDishModal .submitRequestBtn{
+    position: absolute;
+    bottom: 70px;
+    width: 80%;
+}
+
+#requestDishModal button{
+    margin: 0px 12px;
+}
+
+
+/* Styling the landing section */
+#landing {
+    height: 100vh;
+    background-color: #1AC073;
+}
+
+
+/* Styling the navBox */
+#navBox {
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navBox #navBar ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+#navBox #navBar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 21px;
+}
+
+#navBox #navRight .icons {
+    padding: 0px 15px;
+}
+
+
+/* Styling the home page */
+#home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home #title {
+    color: white;
+    width: 40%;
+}
+
+#home #title h1 {
+    font-size: 64px;
+    padding: 5px 0px;
+}
+
+#home #title p {
+    padding: 5px 0px;
+}
+
+#home #title .search {
+    padding: 30px 0px;
+    border-radius: 15px;
+    width: 76%;
+}
+
+#home #title .search input[type="text"] {
+    width: 80%;
+    border: none;
+    padding: 16px;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#home #title .search button {
+    width: 20%;
+    padding: 16px;
+    background-color: #F3BA00;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+/* Styling the kitchen section */
+#kitchen {
+    background-color: #F2F2F2;
+    padding: 75px;
+}
+
+#kitchen #home-kitchen .row {
+    margin: 20px 0;
+}
+
+.box img {
+    display: block;
+}
+
+.box .discount {
+    width: 30px;
+    height: 30px;
+    background-color: #F3BA00;
+    border-top-left-radius: 8px;
+    font-size: 12px;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box #price-label {
+    background-color: white;
+    padding: 16px 15px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 1px lightgrey;
+    margin-bottom: 42px;
+    width: 277px;
+    height: 90px;
+}
+
+#price-label .price {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+#price-label .rating {
+    font-size: 14px;
+}
+
+#price-label .rating .rate {
+    box-shadow: 0px 0px 1px grey;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#price-label .rating .time {
+    background-color: #BEBEBE;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+#price-label .rating .cart-items{
+    padding: 0px 6.3px;
+    border: 2.5px solid #F3BA00;
+}
+
+#kitchen img {
+    height: 250px;
+    width: 277px;
+}
+
+
+/* Styling the carousel */
+.carousel-cell :hover img,
+.carousel-cell :hover #price-label {
+    box-shadow: 1px 1px 8px gray;
+}
+
+.carousel {
+    margin: 40px;
+}
+
+.carousel-cell {
+    width: 28%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.courousel-width {
+    width: 20%;
+}
+
+.flickity-prev-next-button {
+    height: 60px !important;
+    width: 60px !important;
+}
+
+.flickity-prev-next-button.next {
+    background: #1AC073 !important;
+}
+
+.flickity-prev-next-button.next:hover {
+    box-shadow: 1px 1px 7px black;
+}
+
+/* arrow color */
+.flickity-prev-next-button.next .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.previous {
+    background: transparent !important;
+    border: 3px solid #1AC073;
+}
+
+.flickity-prev-next-button.previous:hover {
+    box-shadow: 1px 1px 7px black;
+}
+
+.flickity-prev-next-button.previous .arrow {
+    fill: #1AC073 !important;
+}
+
+
+/* Styling the service section */
+#service {
+    height: 120vh;
+    background: linear-gradient(transparent 50%, #C7EACC 50%);
+}
+
+#service p {
+    color: #737373;
+}
+
+#service #service-video {
+    width: 60vw;
+    margin: 30px auto;
+}
+
+video{
+    object-fit: fill;
+}
+
+
+/* Styling the contact us section */
+#contact-us {
+    padding: 65px 85px;
+}
+
+#contact-form {
+    width: 55%;
+}
+
+#contact-form p {
+    padding: 5px;
+    font-size: 12px;
+}
+
+#contact-form h1 {
+    padding: 5px;
+}
+
+#contact-us input,
+textarea {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px grey;
+}
+
+#contact-us input {
+    width: 50%;
+    margin: 26px 5px 10px;
+}
+
+#contact-us textarea {
+    width: 99%;
+    margin: 10px 5px;
+}
+
+#contact-us #submit-btn {
+    padding: 18px 65px;
+    margin: 5px;
+}
+
+
+/*Styling the footer*/
+footer {
+    background-color: #1AC073;
+    padding: 32px 18px;
+}
+
+footer hr {
+    margin: 10px auto;
+    width: 82%;
+    border-width: 0;
+    height: 1px;
+    background-color: white;
+}
+
+
+/* CSS Utility classes */
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-weight: 400;
+}
+
+.h-secondary {
+    font-weight: 700;
+}
+
+.heading {
+    margin: 60px 5px 10px;
+}
+
+.btn {
+    background-color: #1AC073;
+    border: none;
+    color: white;
+    padding: 10px 34px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.relative {
+    position: relative;
+}
+
+.icons{
+    cursor: pointer;
+}
+
+.centered-element {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -204%);
+}
+
+.cancelBtn{
+    background-color: white;
+    color: #1AC073;
+    border: 2px solid #1AC073;
+}
